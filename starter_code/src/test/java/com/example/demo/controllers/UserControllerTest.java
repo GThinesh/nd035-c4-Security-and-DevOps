@@ -18,6 +18,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import java.util.Optional;
 import java.util.UUID;
 
+import static com.example.demo.controllers.DomainModelFactory.createUserRequest;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
@@ -69,17 +70,6 @@ class UserControllerTest {
 
     }
 
-    @Test
-    void createUser_ShortPassword() {
-        ResponseEntity<User> user = userController.createUser(createUserRequest(4, true));
-        assertEquals(user.getStatusCode(), HttpStatus.BAD_REQUEST);
-    }
-
-    @Test
-    void createUser_UnConfirmed() {
-        ResponseEntity<User> user = userController.createUser(createUserRequest(10, false));
-        assertEquals(user.getStatusCode(), HttpStatus.BAD_REQUEST);
-    }
 
     @Test
     void createUser() {
@@ -92,17 +82,5 @@ class UserControllerTest {
         assertTrue(body.getPassword().endsWith("encoded"));
     }
 
-    private CreateUserRequest createUserRequest(int passwordLength, boolean correctlyConfirmed) {
-        CreateUserRequest createUserRequest = new CreateUserRequest();
-        createUserRequest.setUsername("New Admin");
-        String pw = UUID.randomUUID().toString().substring(0, passwordLength);
-        createUserRequest.setPassword(pw);
-        if (correctlyConfirmed) {
-            createUserRequest.setConfirmPassword(pw);
-        } else {
-            createUserRequest.setConfirmPassword(pw + "asfas");
-        }
-        return createUserRequest;
 
-    }
 }

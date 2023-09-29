@@ -4,11 +4,13 @@ import com.example.demo.model.persistence.Cart;
 import com.example.demo.model.persistence.Item;
 import com.example.demo.model.persistence.User;
 import com.example.demo.model.persistence.UserOrder;
+import com.example.demo.model.requests.CreateUserRequest;
 import com.example.demo.model.requests.ModifyCartRequest;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.UUID;
 
 public class DomainModelFactory {
     public static User createUser() {
@@ -21,6 +23,20 @@ public class DomainModelFactory {
         user.setCart(cart);
 
         return user;
+    }
+
+    public static CreateUserRequest createUserRequest(int passwordLength, boolean correctlyConfirmed) {
+        CreateUserRequest createUserRequest = new CreateUserRequest();
+        createUserRequest.setUsername("New Admin");
+        String pw = UUID.randomUUID().toString().substring(0, passwordLength);
+        createUserRequest.setPassword(pw);
+        if (correctlyConfirmed) {
+            createUserRequest.setConfirmPassword(pw);
+        } else {
+            createUserRequest.setConfirmPassword(pw + "asfas");
+        }
+        return createUserRequest;
+
     }
 
     public static Cart createCart() {

@@ -1,7 +1,7 @@
 package com.example.demo.model.requests;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
+@ValidatedUser
 public class CreateUserRequest {
 
 	@JsonProperty
