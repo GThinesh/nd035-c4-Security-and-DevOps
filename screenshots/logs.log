@@ -1,0 +1,50 @@
+2023-09-29 15:46:48.163  INFO 9304 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on DESKTOP-NQJ5GHF with PID 9304 (G:\Java\nd035-c4-Security-and-DevOps-Ex\starter_code\target\classes started by Thinesh in G:\Java\nd035-c4-Security-and-DevOps-Ex)
+2023-09-29 15:46:48.169  INFO 9304 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2023-09-29 15:46:49.526  INFO 9304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-09-29 15:46:49.660  INFO 9304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119ms. Found 4 repository interfaces.
+2023-09-29 15:46:50.894  INFO 9304 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b32fec6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-29 15:46:51.606  INFO 9304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-29 15:46:51.727  INFO 9304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-29 15:46:51.729  INFO 9304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-09-29 15:46:52.240  INFO 9304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-29 15:46:52.244  INFO 9304 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3957 ms
+2023-09-29 15:46:54.142  INFO 9304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-29 15:46:54.793  INFO 9304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-29 15:46:54.939  INFO 9304 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-09-29 15:46:55.149  INFO 9304 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2023-09-29 15:46:55.159  INFO 9304 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2023-09-29 15:46:55.658  INFO 9304 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-09-29 15:46:56.167  INFO 9304 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-09-29 15:46:58.639  INFO 9304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-29 15:47:00.436  WARN 9304 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-29 15:47:00.675  INFO 9304 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-09-29 15:47:00.712  INFO 9304 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18139a43, org.springframework.security.web.context.SecurityContextPersistenceFilter@c7a1db6, org.springframework.security.web.header.HeaderWriterFilter@664083f6, org.springframework.web.filter.CorsFilter@4df5f119, org.springframework.security.web.authentication.logout.LogoutFilter@498503cb, com.example.demo.security.JWTAuthenticationFilter@3dbb7bb, com.example.demo.security.JWTAuthenticationVerficationFilter@6277a496, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b6b99c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49392256, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6632eb19, org.springframework.security.web.session.SessionManagementFilter@67216c33, org.springframework.security.web.access.ExceptionTranslationFilter@7a74672, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24bdd996]
+2023-09-29 15:47:00.897  INFO 9304 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-29 15:47:01.388  INFO 9304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-29 15:47:01.391  INFO 9304 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 14.012 seconds (JVM running for 16.059)
+2023-09-29 15:47:06.686  INFO 9304 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-29 15:47:06.686  INFO 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-29 15:47:06.695  INFO 9304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-09-29 15:47:06.888  WARN 9304 --- [http-nio-8080-exec-1] c.e.demo.controllers.UserController      : User Thinesh cannot be created. The password does not match the requirements
+2023-09-29 15:47:07.989  WARN 9304 --- [http-nio-8080-exec-2] c.e.demo.controllers.UserController      : User Thinesh cannot be created. The password does not match the requirements
+2023-09-29 15:47:09.279  WARN 9304 --- [http-nio-8080-exec-5] c.e.demo.controllers.UserController      : User Thinesh cannot be created. The password does not match the requirements
+2023-09-29 15:47:10.320  WARN 9304 --- [http-nio-8080-exec-3] c.e.demo.controllers.UserController      : User Thinesh cannot be created. The password does not match the requirements
+2023-09-29 15:47:11.313  WARN 9304 --- [http-nio-8080-exec-9] c.e.demo.controllers.UserController      : User Thinesh cannot be created. The password does not match the requirements
+2023-09-29 15:47:17.863  INFO 9304 --- [http-nio-8080-exec-6] c.e.demo.controllers.UserController      : User created successfully
+2023-09-29 15:47:23.927  INFO 9304 --- [http-nio-8080-exec-4] c.e.demo.controllers.UserController      : User created successfully
+2023-09-29 15:47:27.577  INFO 9304 --- [http-nio-8080-exec-7] c.e.demo.controllers.UserController      : User created successfully
+2023-09-29 15:47:31.261  INFO 9304 --- [http-nio-8080-exec-1] c.e.demo.controllers.UserController      : User created successfully
+2023-09-29 15:47:35.740  INFO 9304 --- [http-nio-8080-exec-5] c.e.demo.controllers.UserController      : User created successfully
+2023-09-29 15:47:40.653  INFO 9304 --- [http-nio-8080-exec-3] c.e.demo.controllers.UserController      : User created successfully
+2023-09-29 15:47:44.063  INFO 9304 --- [http-nio-8080-exec-6] c.e.demo.controllers.UserController      : User created successfully
+2023-09-29 15:47:51.533  INFO 9304 --- [http-nio-8080-exec-4] c.e.demo.controllers.UserController      : User created successfully
+2023-09-29 15:48:03.927  INFO 9304 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2023-09-29 15:49:08.741  INFO 9304 --- [http-nio-8080-exec-3] c.e.demo.controllers.OrderController     : Order placed successfully
+2023-09-29 15:49:10.404  INFO 9304 --- [http-nio-8080-exec-9] c.e.demo.controllers.OrderController     : Order placed successfully
+2023-09-29 15:49:11.695  INFO 9304 --- [http-nio-8080-exec-6] c.e.demo.controllers.OrderController     : Order placed successfully
+2023-09-29 15:49:14.460  INFO 9304 --- [http-nio-8080-exec-10] c.e.demo.controllers.OrderController     : Order placed successfully
+2023-09-29 15:49:17.273  INFO 9304 --- [http-nio-8080-exec-4] c.e.demo.controllers.OrderController     : Order placed successfully
+2023-09-29 15:49:20.001  INFO 9304 --- [http-nio-8080-exec-7] c.e.demo.controllers.OrderController     : Order placed successfully
+2023-09-29 15:49:23.412  INFO 9304 --- [http-nio-8080-exec-8] c.e.demo.controllers.OrderController     : Order placed successfully
